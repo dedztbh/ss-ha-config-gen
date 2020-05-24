@@ -13,3 +13,12 @@ Customize at the begining of file:
 - ranges: ip ranges to use
 - num_server: number of servers created
 - full_config: other configuration that windows ss client can read
+
+-----------------------------------
+## haproxy.py
+
+For haproxy (Linux and macos). 
+
+Customize at the begining of file:
+- ranges: ip ranges to use
+- num_server: number of servers created
