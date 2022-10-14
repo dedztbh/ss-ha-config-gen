@@ -50,7 +50,7 @@ from os.path import exists
 #
 # print(f'len(ips)={len(ips)}')
 
-with open("result.csv", encoding='utf-8') as f:
+with open("..\\CloudflareST_windows_amd64\\result_hosts.txt", encoding='utf-8') as f:
     ips = [row.split(',')[0] for row in f.readlines()[1:]]
 
 # ips = random.choices(ips, k=min(num_server, len(ips)))

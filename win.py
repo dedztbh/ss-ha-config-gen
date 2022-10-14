@@ -32,7 +32,8 @@ full_config = {
 #     for ip in ipaddress.IPv4Network(iprange):
 #         ips.append(str(ip))
 
-ips = ['172.64.91.168', 'cloudflare.com']
+# ips = ['172.64.91.168', 'cloud.flare']
+ips = ['cloud.flare']
 
 with open("..\\CloudflareST_windows_amd64\\result_hosts.txt", encoding='utf-8') as f:
     ips += [row.split(',')[0] for row in f.readlines()[1:]]
@@ -51,5 +52,5 @@ def mk_new_server(ip):
 configs = list(map(mk_new_server, ips))
 full_config['configs'] = configs
 
-with open('gui-config.json', 'w+') as f:
+with open('..\\Desktop\\Conn\\ss\\gui-config.json', 'w') as f:
     f.write(json.dumps(full_config, indent=4))
